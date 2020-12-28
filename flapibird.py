@@ -56,6 +56,8 @@ def gamedraw():
     overtext = overfont.render("Game over",0,(0,0,0))
     if sbartap == False:
         barinfotxt = barinfo.render("Tap Space-bar to star the game",0,(255,0,0))
+        flyinfo = barinfo.render("Tap/hold Space-bar to make the bird fly",0,(255,0,0))
+        win.blit(flyinfo,(100,460))
         win.blit(barinfotxt,(100,400))
     win.blit(text,(0,10))
     parrot.draw(win)
