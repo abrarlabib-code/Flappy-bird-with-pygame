@@ -48,8 +48,6 @@ class pillarcls :
         pygame.draw.rect(win,(255,0,0),self.hitbox2,2)
 
 #gamewindow
-bgmusic = pygame.mixer.music.load("music.mp3")
-
 def gamedraw():
     win.blit(bg,(0,0))
     text = font.render("Score: "+ str(score//5),0,(0,0,255))
